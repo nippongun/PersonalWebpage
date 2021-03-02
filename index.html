@@ -12,7 +12,23 @@
     <body >
 
         <header>
-            <h1>Simon "Simppa" Bauer</h1> 
+            <div>
+                <h1>Simon "Simppa" Bauer</h1> 
+            </div>
+            <div>
+                <div class="icon-div">
+                    <a href="mailto:simppabauer@gmail.com"><img class="icon" src="src/icons/iconmonstr-email-1.svg" alt="email"></a>
+                </div>
+                <div class="icon-div">
+                    <a href="https://github.com/nippongun"><img class="icon" src="src/icons/iconmonstr-github-2.svg" alt="GitHub"></a>
+                </div>
+                <div class="icon-div">
+                    <a href="https://www.linkedin.com/in/simppabauer/"><img class="icon" src="src/icons/iconmonstr-linkedin-2.svg" alt="LinkedIn"></a>
+                </div>
+                <div class="icon-div">
+                    <a href="src/cv.pdf"><img class="icon" src="src/icons/iconmonstr-cv-3.svg" alt="CV"></a>
+                </div>
+            </div>
         </header>
 
         <script src="js/jquery-3.5.1.js"></script>
@@ -28,16 +44,19 @@
                         <div id="main-navigation">
                             <ul id="navigation-bar">
                                 <li>
-                                    <a  href="#about">About</a>
+                                    <a href="#about">About</a>
                                 </li>
                                 <li>
-                                    <a  href="#work">Work</a>
+                                    <a href="#education">Education</a>
                                 </li>
                                 <li>
-                                    <a  href="#education">Education</a>
-                                </li>
-                                <li>
-                                    <a  href="#projects">Projects</a>
+                                    <a href="#projects">Projects</a>
+                                    <ul class="sub-ul">
+                                        <li><a href="#university-projects">University Projects</a>
+                                        </li>
+                                        <li><a href="#hobby-projects">Hobby Projects</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -54,25 +73,24 @@
                         <h2 id="about">About</h2>
                         <p>
                             Ambitious IT student at the Metropolia University of Applied Science in the beautiful Helsinki. Currently in the second year. Known for a focused and dedicated work philosophy.
+                            My university and my hobby projects allowed me to collect years of experience with computers, how they work and programming in general.
                         </p>
                 </div>
-                <div id="work">
-                    <h2 id="work">Work</h2>
-                    <p><b>¯\_(ツ)_/¯</b></p>
-                </div>
-                <div id="education">
+                <div>
                     <h2 id="education">Education</h2>
 
                     <h3><b>since 2019</b></h3>
                     <span class="description">Metropolia University of Applied Science, Helsinki, Finland</span>
                     <ul>
-                        <li>Bachelor of Engineering, Information Technology</li>
-                        <li>Professional Major Internet of Things</li>
+                        <li>> Bachelor of Engineering, Information Technology</li>
+                        <li>> Professional Major Internet of Things</li>
+                        <li>> Fundamental knowledge in Computer Architecture, Internet Infrastructure and Communication</li>
+                        <li>> Advanced knowledge in microchips and C/C++ development</li>
                     </ul>
                 </div>
-                <div id="projects">
-                    <h2 id="about">Projects</h2>
-                    <span class="description">University projects</span>
+                <div>
+                    <h2 id="projects">Projects</h2>
+                    <span class="description" id="university-projects">University projects</span>
                     <ul>
                         <li class="project-item"><b>Watertracker</b>
                             <p><a href="https://github.com/nippongun/WaterTracker">Watertracker</a> is an Android which tracks the consumption of water of a user. The user can add custom sizes of their favorite container. It also shows the consumption over the last 7 days in a neat bar chart. And if the user forgets to drink, the app reminds to drink!</p>
@@ -82,18 +100,19 @@
                         </li>
                         
                     </ul>
-                    <span class="description">Hobby projects</span>
+                    <span class="description" id="hobby-projects">Hobby projects</span>
                     <ul>
                         <li class="project-item"><b>CircularRoads</b>
-                            <p>CircularRoads is a <a href="https://github.com/nippongun/CircularRoads">Unity project</a> which achieves procedually generated full circle roads using the magic of polar coordinates and cubic interpolation. First it creates random points, then overlays splines and finish by creating a seamless mesh. </p>
+                            <p>CircularRoads is a <a href="https://github.com/nippongun/CircularRoads">Unity project</a> which achieves procedually generated full circle roads using the magic of polar coordinates and cubic interpolation. First it creates random points, then overlays splines and finishes by creating a seamless mesh. </p>
                         </li>
                         <li class="project-item"><b>This very page</b>
-                        <p>I will use this very webpage as a playground for web development and project tracking. Of course this page subject to change.
+                        <p>I will use this <a href="https://github.com/nippongun/PersonalWebpage">very webpage</a> as a playground for web development and project tracking. Of course this page subject to change.
                         </p>
                         
                         </li>
 
                     </ul>
+
                 </div>
             </div>
         </main>

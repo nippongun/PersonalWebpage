@@ -12,12 +12,17 @@
     font-style: normal;
 }
 
+a {
+    color: #E92B16;
+}
+
 b{
     font-family: 'OswaldBold';
 }
 
 * {
     font-family: OswaldRegular;
+    color: #161618;
 }
 
 h2 {
@@ -43,10 +48,49 @@ main body html{
     overflow-x: hidden;
 }
 
+main {
+    background-color: #F2FDFE;
+   /* background-color: #FEF3F2;*/
+}
+
 header{
-    background-color: #2DD2D2;
+    background-color: #16D4E9;
     padding: 2vh 5vw;
     border-bottom: solid #161618;
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    header {
+        flex-direction: column;
+    }
+    .icon-div {
+        height: 100%;
+    }
+}
+
+header > div {
+    display: flex;
+    flex: row;
+}
+
+.icon-div{
+    margin-left: 4vw;
+}
+
+.icon-div > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 50%;
+}
+
+
+body {
+    margin: 0;
 }
 
 #main {
@@ -66,17 +110,38 @@ header{
 
 
 
-/*Left side of the page*/
+/*Left side of the page (navbar)*/
 #left{
-    background: #ffff55;
+    background: #F0F1F1;
     float: left;
     max-height: 100%;
     order: 0;
     flex: 0 1 20%;
+    border-right: solid #B1B1B1 0.25vw;
+}
+nav {
+    position: sticky;
+    overflow: auto;
+    top: 5vh;
+}
+
+nav > a {
+    font-size: 32pt;
+    color: #161618;
+    margin-left: 1vw;
 }
 
 #navigation-bar {
     flex-direction: column;
+}
+#navigation-bar > li > a{
+    font-size: 30pt;
+    color: #161618;
+}
+
+.sub-ul > li >a {
+    font-size: 15pt;
+    color: #161618;
 }
 
 /*Right side of the page*/
@@ -106,5 +171,9 @@ header{
 @media screen and (max-width: 600px){
     #main {
         flex-direction: column;
+    }
+    #left {
+        border-bottom: solid #B1B1B1 0.25vw;
+        border-right: transparent;
     }
 }
