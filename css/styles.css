@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    /* Muted background color */
+}
+
+header {
+    background-color: #ffcc66;
+    /* Muted yellow */
+    color: #333;
+    /* Dark gray text */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    /* Dark gray text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Style for h2 elements */
+h2 {
+    color: #ffcc66;
+    /* Muted yellow */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Style for p elements */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    /* Slightly muted gray text */
+}
+
+/* Rounded-corner box around sub-divs */
+.section {
+    background-color: #f9f9f9;
+    /* Light gray */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Style for contact icons */
+.contact-icon {
+    font-size: 24px;
+    color: #333;
+    /* Dark gray */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Style for contact icons on hover */
+.contact-icon:hover {
+    color: #ffcc66;
+    /* Muted yellow on hover */
+}
+
+/* Style for unordered list (ul) */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 0;
+}
+
+/* Style for list items (li) within the ul */
+ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    /* Slightly muted gray text */
+}
